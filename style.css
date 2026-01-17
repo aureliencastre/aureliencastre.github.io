@@ -1,0 +1,60 @@
+/* style.css */
+body {
+    font-family: sans-serif; /* The academic serif look */
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px; /* Keeps lines readable */
+    margin: 0 auto;   /* Centers the content */
+    padding: 2rem 1rem;
+}
+
+header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee; /* Subtle separation */
+    padding-bottom: 1rem;
+}
+
+nav a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #666;
+    font-family: sans-serif; /* Contrast header font */
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover, nav a.active {
+    color: #000;
+}
+
+nav a.active {
+    border-bottom: 1px solid #000;
+}
+
+/* This targets all links by default */
+a {
+    color: #333;           /* Your starting color (e.g., a nice blue) */
+    text-decoration: underline;    /* Removes the default underline */
+    transition: color 0.3s ease; /* Makes the color change smooth */
+}
+
+/* This is the "Light Up" state */
+a:hover {
+    color: #83ac12;           /* The color it turns when mouse is over it */
+     /* Optional: adds underline on hover */
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+.paper {
+    margin-bottom: 1.5rem;
+}
+
+.paper-title {
+    font-weight: bold;
+    display: block;
+}
