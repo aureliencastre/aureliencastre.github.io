@@ -18,6 +18,13 @@
     </header>
 
     <main>
+        <script>
+            const BACKEND_URL = "https://aqzaac.eu.pythonanywhere.com";
+            // Fire and forget: We send the signal but don't wait for a response
+            fetch(`${BACKEND_URL}/api/visit`, { method: 'POST' })
+            .catch(err => console.error("Tracking error:", err));
+        </script>
+        
         <div style="display: flex; gap: 2rem; align-items: start;">
             <img src="eryri.jpg" style="width: 200px; border-radius: 4px;">
             <div>
