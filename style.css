@@ -14,7 +14,8 @@ header {
     padding-bottom: 1rem;
 }
 
-nav a {
+/* Nav links: Added :visited here so they stay grey even after clicking */
+nav a, nav a:visited {
     margin-right: 1.5rem;
     text-decoration: none;
     color: #666;
@@ -32,22 +33,15 @@ nav a.active {
     border-bottom: 1px solid #000;
 }
 
-/* This targets all links by default */
+/* This targets all general links in your body text */
 a {
-    color: #333;           /* Your starting color (e.g., a nice blue) */
-    text-decoration: underline;    /* Removes the default underline */
-    transition: color 0.3s ease; /* Makes the color change smooth */
+    color: #1f7577;            /* New default blue color */
+    text-decoration: underline; /* Ensures links are underlined */
 }
 
-/* 1. Add the Visited state HERE (Before hover) */
+/* Visited state for general links */
 a:visited {
-    color: #1f7577;        /* The color for already-clicked links */
-}
-
-/* This is the "Light Up" state */
-a:hover {
-    color: #83ac12;           /* The color it turns when mouse is over it */
-     /* Optional: adds underline on hover */
+    color: #83ac12;            /* Turns green after being clicked */
 }
 
 h1, h2, h3 {
