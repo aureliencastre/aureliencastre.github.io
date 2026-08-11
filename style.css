@@ -39,6 +39,11 @@ a {
     transition: color 0.3s ease; /* Makes the color change smooth */
 }
 
+/* 1. Add the Visited state HERE (Before hover) */
+a:visited {
+    color: #1f7577;        /* The color for already-clicked links */
+}
+
 /* This is the "Light Up" state */
 a:hover {
     color: #83ac12;           /* The color it turns when mouse is over it */
