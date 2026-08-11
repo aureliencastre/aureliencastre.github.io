@@ -27,6 +27,7 @@ nav a, nav a:visited {
 
 nav a:hover, nav a.active {
     color: #000;
+    font-style: normal; /* Prevents the navigation links from turning italic */
 }
 
 nav a.active {
@@ -42,6 +43,11 @@ a {
 /* Visited state for general links */
 a:visited {
     color: #83ac12;            /* Turns green after being clicked */
+}
+
+/* Hover state for general links */
+a:hover {
+    font-style: italic;        /* Makes links italic when the mouse is over them */
 }
 
 h1, h2, h3 {
